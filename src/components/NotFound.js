@@ -14,7 +14,7 @@ let NotFound = () => {
       >
         <h1> 404 not Found!</h1>
         <div className="mt-4">
-          <Link to="/">
+          <Link to="/signin-practice">
             <Button>Back to main page</Button>
           </Link>
         </div>

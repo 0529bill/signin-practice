@@ -30,7 +30,7 @@ function UiSignup() {
         <Button
           variant="dark"
           size="sm"
-          onClick={() => history.push('/signup')}
+          onClick={() => history.push('/signin-practice/signup')}
         >
           Sign Up
         </Button>{' '}

@@ -2,7 +2,6 @@ import React from 'react';
 import CountUp from 'react-countup';
 import { faTasks, faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Row } from 'react-bootstrap';
 
 function ThirdPage() {
   return (

@@ -16,17 +16,21 @@ function Apps() {
     <ContextApiProvider>
       <Router>
         <Switch>
-          <PrivateRoute exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/">
+          <PrivateRoute
+            exact
+            path="/signin-practice/dashboard"
+            component={Dashboard}
+          />
+          <Route exact path="/signin-practice">
             <App />
           </Route>
-          <Route exact path="/signin">
+          <Route exact path="/signin-practice/signin">
             <SignIn />
           </Route>
-          <Route exact path="/signup">
+          <Route exact path="/signin-practice/signup">
             <SignUp />
           </Route>
-          <Route exact path="/forgotpassword">
+          <Route exact path="/signin-practice/forgotpassword">
             <ForgotPassword />
           </Route>
           <Route component={NotFound} />

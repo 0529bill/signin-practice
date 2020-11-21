@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Form, Button, Container, Card } from 'react-bootstrap';
 import { useAuth } from '../contextApi/contextApi';
 import { Link } from 'react-router-dom';
@@ -54,10 +54,11 @@ function ForgotPassword() {
               </Button>
             </Form>
             <div className="w-100 text-center mt-4">
-              Already have an account? <Link to="/signIn">Sign In</Link>
+              Already have an account?{' '}
+              <Link to="/signin-practice/signIn">Sign In</Link>
             </div>
             <div className="w-100 text-center mt-2">
-              Back to <Link to="/">Home page</Link>
+              Back to <Link to="/signin-practice">Home page</Link>
             </div>
           </Card.Body>
         </Card>

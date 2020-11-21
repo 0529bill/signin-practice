@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth } from '../contextApi/contextApi';
 import { Card, Button, Container } from 'react-bootstrap';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 function Dashboard() {
   const { currentUser, logout } = useAuth();
@@ -10,7 +10,7 @@ function Dashboard() {
   let handleLogout = async () => {
     try {
       await logout();
-      history.push('/');
+      history.push('/signin-practice');
     } catch {
       alert('failed to logout!');
     }

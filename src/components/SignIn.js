@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Form, Button, Container, Card, Alert } from 'react-bootstrap';
 import { useAuth } from '../contextApi/contextApi';
 import { Link } from 'react-router-dom';
-import { useHistory, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 function SignIn() {
   const { signIn, currentUser, error } = useAuth();
@@ -27,7 +27,7 @@ function SignIn() {
   return (
     <div>
       {currentUser ? (
-        <Redirect to="/dashboard" />
+        <Redirect to="/signin-practice/dashboard" />
       ) : (
         <div style={{ backgroundColor: '#a9a9a9' }}>
           <Container
@@ -73,13 +73,15 @@ function SignIn() {
                   </Button>
                 </Form>
                 <div className="w-100 text-center mt-2">
-                  Need an account? <Link to="/signup">Sign up</Link>
+                  Need an account?{' '}
+                  <Link to="/signin-practice/signup">Sign up</Link>
                 </div>
                 <div className="w-100 text-center mt-2">
-                  Forgot password? <Link to="/forgotpassword">Click here</Link>
+                  Forgot password?{' '}
+                  <Link to="/signin-practice/forgotpassword">Click here</Link>
                 </div>
                 <div className="w-100 text-center mt-2">
-                  Back to <Link to="/">Home page</Link>
+                  Back to <Link to="/signin-practice">Home page</Link>
                 </div>
               </Card.Body>
             </Card>

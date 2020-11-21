@@ -34,7 +34,7 @@ function FirstPage() {
           <Button
             variant="dark"
             size="sm"
-            onClick={() => history.push('/signin')}
+            onClick={() => history.push('/signin-practice/signin')}
           >
             Sign In to shop
           </Button>

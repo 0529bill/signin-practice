@@ -32,7 +32,7 @@ function SignUp() {
   return (
     <div>
       {currentUser ? (
-        <Redirect to="/dashboard" />
+        <Redirect to="/signin-practice/dashboard" />
       ) : (
         <div style={{ backgroundColor: '#88807B' }}>
           <Container
@@ -73,13 +73,15 @@ function SignUp() {
                   </Button>
                 </Form>
                 <div className="w-100 text-center mt-2">
-                  Need an account? <Link to="/signIn">Sign In</Link>
+                  Need an account?{' '}
+                  <Link to="/signin-practice/signIn">Sign In</Link>
                 </div>
                 <div className="w-100 text-center mt-2">
-                  Forgot password? <Link to="/forgotpassword">Click here</Link>
+                  Forgot password?{' '}
+                  <Link to="/signin-practice/forgotpassword">Click here</Link>
                 </div>
                 <div className="w-100 text-center mt-2">
-                  Back to <Link to="/">Home page</Link>
+                  Back to <Link to="/signin-practice">Home page</Link>
                 </div>
               </Card.Body>
             </Card>
